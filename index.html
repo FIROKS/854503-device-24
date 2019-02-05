@@ -3,10 +3,102 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="index-body">
+    <div class="wrapper">
+      <header class="index-header">
+        <a class="logo"><img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="35"></a>
+        <div class="container">
+          <div class="search-container">
+            <label class="visually-hidden" for="search">Поиск по сайту</label>
+            <input class="search" id="search" type="text" placeholder="Поиск по сайту"><!--
+            --><a href="#" class="search-button">Найти</a>
+          </div>
+          <div class="container-1">
+            <a href="#" class="enter">Войти</a>
+            <a href="#" class="compare">Сравнить</a>
+            <a href="#" class="cart">Корзина</a>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="first-link" href="#">Каталог товаров</a>
+              <div class="catalog-container">
+                <ul class="catalog-list">
+                  <li><a href="#">Виртуальная реальность</a></li>
+                  <li><a href="#">Моноподы для селфи</a></li>
+                  <li><a href="#">Экшн-камеры</a></li>
+                </ul>
+                <ul class="catalog-list">
+                  <li><a href="#">Фитнес-браслеты</a></li>
+                  <li><a href="#">Умные часы</a></li>
+                </ul>
+                <ul class="catalog-list">
+                  <li><a href="#">Квадрокоптеры</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item"><a href="#">Доставка</a></li>
+            <li class="nav-item"><a href="#">Гарантия</a></li>
+            <li class="nav-item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="wrapper">
+        <h1 class="visually-hidden">Интернет-магазин Device</h1>
+        <!-- slider -->
+        <section class="products">
+          <h2 class="visually-hidden">Популярные товары</h2>
+          <ul class="catalog">
+            <li class="catalog-item"><a href="" class="catalog-link">Виртуальная реальность</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Моноподы для селфи</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Экшн-камеры</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Фитнес-браслеты</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Умные-часы</a></li>
+            <li class="catalog-item"><a href="" class="catalog-link">Квадрокоптеры</a></li>
+          </ul>
+        </section>
+      </div>  
+    </main>
+    <footer class="index-footer">
+      <div class="wrapper">
+        <div class="top-row">
+          <a class="footer-logo"><img src="img/logo-footer.svg" alt="Логотип магазина Device" width="163" height="35"></a>
+          <div class="footer-container">
+            <ul class="enter-list">
+                <li><a href="#" class="enter-footer footer-text">Войти</a></li>
+            </ul>        
+            <a href="#" class="compare-footer footer-text">Сравнить</a>
+            <a href="#" class="cart-footer footer-text">Корзина</a>
+          </div>
+        </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        <div class="center-row">
+          <address class="footer-text">г. Москва, ул. Строителей, 15</address>
+          <ul class="footer-nav">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <span class="tel footer-text">Тел.: +7 (495) 495-95-95</span>
+        </div>
 
+        <div class="bottom-row">     
+          <span class="line"></span>     
+          <ul class="social-list">
+            <li><a href="#" class="social-item fb">Мы в Facebook</a></li>
+            <li><a href="#" class="social-item inst">Мы в Instagram</a></li>
+            <li><a href="#" class="social-item tw">Мы в Twitter</a></li>
+          </ul>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27px" height="35px"></a>
+        </div>
+        
+      </div>
+    </footer>
   </body>
 </html>
