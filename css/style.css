@@ -56,15 +56,6 @@ a {
 	background-color: #ffffff;
 }
 
-.sans {
-	font-family: "Open Sans", Arial, sans-serif;
-}
-
-.gilroy {
-	font-family: "gilroyextrabold", Arial, sans-serif;
-
-}
-
 .index-header {
 	position: relative;
 	min-height: 240px;
@@ -102,6 +93,7 @@ a {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
+	font-weight: 400;
 	color: #000000;
 	background: url(../img/search.svg) 4px 15px no-repeat, transparent;
 	border: none;
@@ -268,6 +260,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
+	margin-bottom: 80px;
 	padding: 0;
 	list-style: none;
 }
@@ -359,6 +352,7 @@ a {
 10 */
 .service {
 	min-height: 400px;
+	margin-bottom: 90px;
 	background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px, #e5e5e5 388px, transparent 388px);
 }
 
@@ -392,6 +386,7 @@ a {
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 24px;
+	font-weight: 400;
 	letter-spacing: 4px;
 	text-align: center;
 	text-transform: uppercase;
@@ -438,13 +433,14 @@ a {
 	padding-top: 70px;
 }
 
-.service-slide .service-title {
+.title {
 	margin: 0;
 	margin-bottom: 32px;
 	padding: 0;
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 47px;
-	line-height: 50px;
+	line-height: 48px;
+	font-weight: 400;
 	color: #000000;
 }
 
@@ -468,6 +464,167 @@ a {
 .service-slide-3 {
 	background: url(../img/credit.png) 530px center no-repeat;
 }
+
+.partners-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	margin-bottom: 90px;
+	padding: 0;
+	list-style: none;
+}
+
+.partners-img {
+	filter: grayscale(100%);
+}
+
+.info-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.about {
+	position: relative;
+	width: 480px;
+	padding-top: 55px;
+}
+
+.about::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+}
+
+.text {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	font-family: "gilroylight", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+}
+
+.delserv-list {
+	margin: 50px 0 60px 0;
+	padding: 0;
+	list-style: none;
+}
+
+.delserv-list li {
+	position: relative;
+	margin: 0;
+	margin-bottom: 3px;
+	padding: 0;
+	padding-left: 35px;
+}
+
+.delserv-list li::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 1px;
+	width: 8px;
+	height: 8px;
+	background-color: #e6e6e6;
+	border-radius: 50%;
+}
+
+.delserv-list li::after {
+	content: "";
+	position: absolute;
+	top: 18px;
+	left: 3px;
+	width: 4px;
+	height: 4px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.delserv-list .bold-text {
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.stylized-elem {
+	display: inline-block;
+	position: relative;
+	min-width: 260px;
+	margin: 0;
+	padding: 0;
+	padding: 8px 0;
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	z-index: 1;
+}
+
+.stylized-elem::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 0;
+	width: 260px;
+	height: 8px;
+	background-color: #f0c52e;
+	z-index: -1;
+}
+
+.contacts {
+	position: relative;
+	width: 560px;
+	padding-top: 55px;
+}
+
+.contacts::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+}
+
+.contacts .text:last-of-type{
+	margin-bottom: 35px;
+}
+
+.minimap {
+	width: 560px;
+	height: 222px;
+	margin-bottom: 69px;
+	background: url(../img/map.jpg) no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -593,6 +750,7 @@ a {
 	font-family: "gilroyextrabold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: #ffffff;
 }
