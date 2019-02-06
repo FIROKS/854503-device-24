@@ -48,7 +48,7 @@ a {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	font-weight: 400;
@@ -57,7 +57,7 @@ a {
 }
 
 .sans {
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", Arial, sans-serif;
 }
 
 .gilroy {
@@ -99,7 +99,7 @@ a {
 	position: relative;
 	width: 355px;
 	padding: 7px 40px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 15px;
 	line-height: 30px;
 	color: #000000;
@@ -353,6 +353,140 @@ a {
 	height: 160px;
 	background: url(../img/poppular-6.png) center center no-repeat, #f7e296;
 }
+/* 
+390
+
+10 */
+.service {
+	min-height: 400px;
+	background: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px, #e5e5e5 388px, transparent 388px);
+}
+
+.service .wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.service-slider {
+	box-sizing: border-box;
+	width: 284px;
+	margin: 0;
+	padding: 80px 0 70px 0;
+	border-right: 7px solid #000000;
+	list-style: none;
+}
+
+.service-slider .service-slider-item {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.service-label {
+	display: inline-block;
+	position: relative;
+	min-width: 160px;
+	margin: 0;
+	padding: 0;
+	padding: 8px 117px 8px 0;
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	z-index: 1;
+}
+
+.service-label::before {
+	content: "";
+	position: absolute;
+	top: 16px;
+	left: 0;
+	width: 160px;
+	height: 8px;
+	background-color: #f0c52e;
+	z-index: -1;
+}
+
+/* .service-label::after {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 160px;
+	height: 4px;
+	background-color: #f0c52e;
+	transform: rotate(180deg);
+	z-index: -1;
+} */
+
+[class^="toggle-"]:checked + .service-label {
+	background-color: #000000;
+	color: #d6c372;
+}
+
+[class^="toggle-"]:checked + .service-label::before {
+	background-color: transparent;
+}
+
+.service-slide {
+	width: 760px;
+	margin: 0;
+	padding: 0;
+	padding-top: 70px;
+}
+
+.service-slide .service-title {
+	margin: 0;
+	margin-bottom: 32px;
+	padding: 0;
+	font-family: "gilroyextrabold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 50px;
+	color: #000000;
+}
+
+.service-slide .service-text {
+	width: 445px;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+}
+
+.service-slide-1 {
+ background: url(../img/delivery.png) 560px center no-repeat;
+}
+
+.service-slide-2 {
+	background: url(../img/warranty.png) 535px center no-repeat;
+}
+
+.service-slide-3 {
+	background: url(../img/credit.png) 530px center no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .index-footer {
 	margin-top: 75px;
