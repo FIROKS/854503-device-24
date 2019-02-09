@@ -25,7 +25,7 @@
         </div>
         <nav class="main-nav">
           <ul class="nav-list">
-            <li class="nav-item"><a class="first-link" href="#">Каталог товаров</a>
+            <li class="nav-item"><a class="first-link">Каталог товаров</a>
               <div class="catalog-container">
                 <ul class="catalog-list">
                   <li><a href="#">Виртуальная реальность</a></li>
@@ -48,12 +48,89 @@
         </nav>
       </header>
     </div>
-    <main>
-      <div class="wrapper">
-        <h1 class="visually-hidden">Интернет-магазин Device</h1>
-        <!-- slider -->
+    <main class="index-main">
+      <div class="wrapper slider-wrapper">        
+        <h1 class="visually-hidden">Интернет-магазин Device</h1>        
+          <section class="slider"> 
+            <h2 class="visually-hidden">Популярные товары</h2>
+            <input type="radio" class="visually-hidden" id="slide-1" name="popular" checked>
+            <input type="radio" class="visually-hidden" id="slide-2" name="popular">
+            <input type="radio" class="visually-hidden" id="slide-3" name="popular">
+            <div class="slider-controls">
+              <label for="slide-1" class="slider-indicator">Первый слайд</label>
+              <label for="slide-2" class="slider-indicator">Второй слайд</label>
+              <label for="slide-3" class="slider-indicator">Третий слайд</label>
+            </div>
+            <ul class="slider-list">
+              <li class="slider-item">
+                <img class="slider-img" src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
+                <div class="slider-content">
+                  <span class="slide-number">01</span>
+                  <p class="lead-text">Делай селфи,<br>как Бен Стиллер! </p>
+                  <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                  <a href="#" class="stylized-elem">Подробнее</a>
+                  <table class="slider-tabl">
+                    <tbody>
+                      <tr class="slider-tabl-row">
+                        <td>8,5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                      </tr>
+                      <tr class="slider-tabl-row">
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="slider-item">
+                <img class="slider-img" src="img/slider-2.png" alt="Фитнес-браслет" width="345" height="485">
+                <div class="slider-content">
+                  <span class="slide-number">02</span>
+                  <p class="lead-text">Худеем<br>правильно! </p>
+                  <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+                  <a href="#" class="stylized-elem">Подробнее</a>
+                  <table class="slider-tabl">
+                    <tbody>
+                      <tr class="slider-tabl-row">
+                        <td>48 часов</td>
+                      </tr>
+                      <tr class="slider-tabl-row">
+                        <td>Без подзарядки</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+              <li class="slider-item">
+                <img class="slider-img" src="img/slider-3.png" alt="Фитнес-браслет" width="526" height="334">
+                <div class="slider-content">   
+                  <span class="slide-number">03</span>               
+                  <p class="lead-text">Порхает как бабочка, жалит как пчела!</p>
+                  <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+                  
+                  <a href="#" class="stylized-elem">Подробнее</a>
+                  <table class="slider-tabl">
+                    <tbody>
+                      <tr class="slider-tabl-row">
+                        <td>800 м</td>
+                        <td>50 м</td>
+                      </tr>
+                      <tr class="slider-tabl-row">
+                        <td>Дальность полета</td>
+                        <td>Радиус поражения</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div class="wrapper">
         <section class="products">
-          <h2 class="visually-hidden">Популярные товары</h2>
+          <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog">
             <li class="catalog-item"><a href="" class="catalog-link">Виртуальная реальность</a></li>
             <li class="catalog-item"><a href="" class="catalog-link">Моноподы для селфи</a></li>
@@ -100,10 +177,10 @@
         <h2 class="visually-hidden">Наши парнеры</h2>
         <div class="wrapper">
           <ul class="partners-list">
-            <li class="partners-list-item"><img src="img/logo-1.png" alt="dji" class="partners-img" width="260" height="100"></li>
-            <li class="partners-list-item"><img src="img/logo-2.png" alt="SP Gadgets" class="partners-img" width="260" height="100"></li>
-            <li class="partners-list-item"><img src="img/logo-3.png" alt="GoPro" class="partners-img" width="260" height="100"></li>
-            <li class="partners-list-item"><img src="img/logo-4.png" alt="Vive" class="partners-img" width="260" height="100"></li>
+            <li class="partners-list-item"><img src="img/logo-1-grey.png" alt="dji" class="partners-img" width="260" height="100"></li>
+            <li class="partners-list-item"><img src="img/logo-2-grey.png" alt="SP Gadgets" class="partners-img" width="260" height="100"></li>
+            <li class="partners-list-item"><img src="img/logo-3-grey.png" alt="GoPro" class="partners-img" width="260" height="100"></li>
+            <li class="partners-list-item"><img src="img/logo-4-grey.png" alt="Vive" class="partners-img" width="260" height="100"></li>
           </ul>
         </div>
       </section>
@@ -126,6 +203,9 @@
             <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="minimap"></div>
             <a class="stylized-elem">Подробнее о нас</a>
+          </section>
+          <section class="modal modal-map">
+            <button type="button"class="close-modal">"Закрыть"</button>
           </section>
         </div>
       </div>
@@ -165,5 +245,26 @@
         
       </div>
     </footer>
+    <section class="modal modal-writeus">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form class="form-writeus" action="" method="POST">
+        <div class="form-container">
+          <div class="form-column">
+            <label class="form-label" for="name-input">Ваше имя:</label>
+            <input class="form-input" id="name-input" type="text" name="name" placeholder="Имя Фамилия">
+          </div>
+          <div class="form-column">
+            <label class="form-label" for="mail-input">Ваш e-mail:</label>
+            <input class="form-input" id="mail-input" type="text" name="e-mail" placeholder="email@example.com">
+          </div>
+        </div>
+        <!-- <div class="form-container"> -->
+          <label class="form-label" for="letter-input">Текст письма</label>
+          <textarea class="form-letter" id="letter-input" name="text" rows="8" placeholder="В свободной форме"></textarea>
+        <!-- </div> -->
+        <button class="stylized-elem" type="submit">Отправить</button>
+      </form>
+      <button type="button" class="close-modal">"Закрыть"</button>
+    </section>
   </body>
 </html>
