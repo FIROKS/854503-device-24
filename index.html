@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Девайс</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="index-body">
@@ -48,7 +48,7 @@
         </nav>
       </header>
     </div>
-    <main class="index-main">
+    <main>
       <div class="wrapper slider-wrapper">        
         <h1 class="visually-hidden">Интернет-магазин Device</h1>        
           <section class="slider"> 
@@ -56,11 +56,7 @@
             <input type="radio" class="visually-hidden" id="slide-1" name="popular" checked>
             <input type="radio" class="visually-hidden" id="slide-2" name="popular">
             <input type="radio" class="visually-hidden" id="slide-3" name="popular">
-            <div class="slider-controls">
-              <label for="slide-1" class="slider-indicator">Первый слайд</label>
-              <label for="slide-2" class="slider-indicator">Второй слайд</label>
-              <label for="slide-3" class="slider-indicator">Третий слайд</label>
-            </div>
+            
             <ul class="slider-list">
               <li class="slider-item">
                 <img class="slider-img" src="img/slider-1.png" alt="Палка для селфи" width="384" height="486">
@@ -124,63 +120,92 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>  
               </li>
             </ul>
+            <div class="slider-controls">
+              <label for="slide-1" class="slider-indicator">Первый слайд</label>
+              <label for="slide-2" class="slider-indicator">Второй слайд</label>
+              <label for="slide-3" class="slider-indicator">Третий слайд</label>
+            </div>
           </section>
+
         </div>
         <div class="wrapper">
-        <section class="products">
+        <section class="goods">
           <h2 class="visually-hidden">Каталог товаров</h2>
           <ul class="catalog">
-            <li class="catalog-item"><a href="" class="catalog-link">Виртуальная реальность</a></li>
-            <li class="catalog-item"><a href="" class="catalog-link">Моноподы для селфи</a></li>
-            <li class="catalog-item"><a href="" class="catalog-link">Экшн-камеры</a></li>
-            <li class="catalog-item"><a href="" class="catalog-link">Фитнес-браслеты</a></li>
-            <li class="catalog-item"><a href="" class="catalog-link">Умные-часы</a></li>
-            <li class="catalog-item"><a href="" class="catalog-link">Квадрокоптеры</a></li>
+            <li class="catalog-item">
+              <div class="catalog-img"></div>
+              <a href="#" class="catalog-link">Виртуальная реальность</a></li>
+            <li class="catalog-item">
+              <div class="catalog-img"></div>
+              <a href="#" class="catalog-link">Моноподы для селфи</a></li>
+            <li class="catalog-item">
+              <div class="catalog-img"></div>
+              <a href="#" class="catalog-link">Экшн-камеры</a></li>
+            <li class="catalog-item">
+              <div class="catalog-img"></div>
+              <a href="#" class="catalog-link">Фитнес-браслеты</a></li>
+            <li class="catalog-item">
+              <div class="catalog-img"></div>
+              <a href="#" class="catalog-link">Умные-часы</a></li>
+            <li class="catalog-item">
+              <div class="catalog-img"></div>
+              <a href="#" class="catalog-link">Квадрокоптеры</a></li>
           </ul>
         </section>
       </div>
       <section class="service">
         <h2 class="visually-hidden">Покупателю</h2>
         <div class="wrapper">
+        
+          <input type="radio" class="toggle-1 visually-hidden" id="delivery" name="service" checked>
+          <input type="radio" class="toggle-2 visually-hidden" id="warranty" name="service">
+          <input type="radio" class="toggle-3 visually-hidden" id="credit" name="service">
+          
           <ul class="service-slider">
-            <li class="service-slider-item">
-              <input type="radio" class="toggle-1 visually-hidden" id="delivery" name="service">
+            <li class="service-slider-item">              
               <label for="delivery" class="service-label">Доставка</label>
             </li>
-            <li class="service-slider-item">
-              <input type="radio" class="toggle-2 visually-hidden" id="warranty" name="service" checked>
+            <li class="service-slider-item">              
               <label for="warranty" class="service-label">Гарантия</label>
             </li>
-            <li class="service-slider-item">
-              <input type="radio" class="toggle-3 visually-hidden" id="credit" name="service">
+            <li class="service-slider-item">              
               <label for="credit" class="service-label">Кредит</label>
             </li>
           </ul>
-          <!-- <div class="service-slide service-slide-1">
+          <div class="service-slide service-slide-1">
             <h3 class="title">Доставка</h3>
             <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </div> -->
+          </div>
           <div class="service-slide service-slide-2">
             <h3 class="title">Гарантия</h3>
             <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.</p>
           </div>
-          <!-- <div class="service-slide service-slide-3">
+          <div class="service-slide service-slide-3">
             <h3 class="title">Кредит</h3>
             <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </div> -->
+          </div>
         </div>
       </section>
       <section class="partners">
         <h2 class="visually-hidden">Наши парнеры</h2>
         <div class="wrapper">
           <ul class="partners-list">
-            <li class="partners-list-item"><img src="img/logo-1-grey.png" alt="dji" class="partners-img" width="260" height="100"></li>
-            <li class="partners-list-item"><img src="img/logo-2-grey.png" alt="SP Gadgets" class="partners-img" width="260" height="100"></li>
-            <li class="partners-list-item"><img src="img/logo-3-grey.png" alt="GoPro" class="partners-img" width="260" height="100"></li>
-            <li class="partners-list-item"><img src="img/logo-4-grey.png" alt="Vive" class="partners-img" width="260" height="100"></li>
+            <li class="partners-list-item">
+              <a href=""><img src="img/logo-1-grey.png" alt="dji" class="partners-img" width="260" height="100"></a>
+            </li>
+            <li class="partners-list-item">
+              <a href=""><img src="img/logo-2-grey.png" alt="SP Gadgets" class="partners-img" width="260" height="100"></a>
+            </li>
+            <li class="partners-list-item">
+              <a href=""><img src="img/logo-3-grey.png" alt="GoPro" class="partners-img" width="260" height="100"></a>
+            </li>
+            <li class="partners-list-item">
+              <a href=""><img src="img/logo-4-grey.png" alt="Vive" class="partners-img" width="260" height="100"></a>
+            </li>
           </ul>
         </div>
       </section>
@@ -202,15 +227,17 @@
             <h2 class="title">Контакты</h2>
             <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <div class="minimap"></div>
-            <a class="stylized-elem">Подробнее о нас</a>
+            <a class="stylized-elem write-us-toggle">Напишите нам</a>
           </section>
           <section class="modal modal-map">
-            <button type="button"class="close-modal">"Закрыть"</button>
+            <h2 class="visually-hidden">Где мы находимся</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.663687474875!2d37.52824313541369!3d55.68576635867336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1551641319479" width="960" height="560" allowfullscreen></iframe>
+            <button type="button" class="modal-close">"Закрыть"</button>
           </section>
         </div>
       </div>
     </main>
-    <footer class="index-footer">
+    <footer class="footer">
       <div class="wrapper">
         <div class="top-row">
           <a class="footer-logo"><img src="img/logo-footer.svg" alt="Логотип магазина Device" width="163" height="35"></a>
@@ -240,14 +267,14 @@
             <li><a href="#" class="social-item inst">Мы в Instagram</a></li>
             <li><a href="#" class="social-item tw">Мы в Twitter</a></li>
           </ul>
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27px" height="35px"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="academy-logo"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
         </div>
         
       </div>
     </footer>
     <section class="modal modal-writeus">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="form-writeus" action="" method="POST">
+      <form class="form-writeus" action="https://echo.htmlacademy.ru" method="POST">
         <div class="form-container">
           <div class="form-column">
             <label class="form-label" for="name-input">Ваше имя:</label>
@@ -255,16 +282,15 @@
           </div>
           <div class="form-column">
             <label class="form-label" for="mail-input">Ваш e-mail:</label>
-            <input class="form-input" id="mail-input" type="text" name="e-mail" placeholder="email@example.com">
+            <input class="form-input" id="mail-input" type="email" name="e-mail" placeholder="email@example.com">
           </div>
         </div>
-        <!-- <div class="form-container"> -->
           <label class="form-label" for="letter-input">Текст письма</label>
-          <textarea class="form-letter" id="letter-input" name="text" rows="8" placeholder="В свободной форме"></textarea>
-        <!-- </div> -->
+          <textarea class="form-letter" id="letter-input" name="text" rows="8" placeholder="В свободной форме"></textarea>        
         <button class="stylized-elem" type="submit">Отправить</button>
       </form>
-      <button type="button" class="close-modal">"Закрыть"</button>
+      <button type="button" class="modal-close">"Закрыть"</button>
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
