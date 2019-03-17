@@ -938,7 +938,23 @@ a {
 }
 
 .service-label:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: #f7e184;
+}
+
+.service-label:active::before {
+  width: 277px;
+  background: #000000;
+  transition: none;
+}
+
+.service-label:active::before {
+  top: 0;
+  height: 40px;
+}
+
+.service-label:active::after {
+  width: 0;
+  height: 0;
 }
 
 .toggle-1:checked~.service-slider label[for="delivery"] {
@@ -1215,7 +1231,8 @@ a {
   z-index: -1;
 }
 
-.stylized-elem:hover::before {
+.stylized-elem:hover::before,
+.stylized-elem:active::before {
   top: 0;
   height: 20px;
 }
@@ -1226,7 +1243,8 @@ a {
 }
 
 .stylized-elem:hover::after,
-.stylized-elem:focus::after {
+.stylized-elem:focus::after,
+.stylized-elem:active::after {
   top: 20px;
   height: 20px;
 }
@@ -1934,7 +1952,7 @@ a {
 }
 
 .breadcrumbs a[href]:active {
-  opacity: 0.1;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .fc-back {
